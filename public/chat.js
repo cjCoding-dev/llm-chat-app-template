@@ -170,6 +170,12 @@ async function sendMessage() {
 					elmt.setAttribute('style', 'margin: 10px;max-width: 300px;display: block;');
 					elmt.setAttribute('src', forgleImage);
 					assistantTextEl.appendChild(elmt);
+					elmt.onload = function() {
+						var wasAtBottom = chatMessages.scrollHeight - chatMessages.clientHeight <= chatMessages.scrollTop + 1;
+						if(wasAtBottom) {
+							chatMessages.scrollTop = chatMessages.scrollHeight;
+						}
+					};
 					if(wasAtBottom) {
 						chatMessages.scrollTop = chatMessages.scrollHeight;
 					}
