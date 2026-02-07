@@ -1,4 +1,4 @@
-const BOTTOM_PADDING = 20;
+const BOTTOM_PADDING = 500;
 let wasAtBottom = true;
 // DOM elements
 function scrollBottom(element) {
