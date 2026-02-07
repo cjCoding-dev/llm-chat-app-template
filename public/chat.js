@@ -37,6 +37,7 @@ sendButton.addEventListener("click", sendMessage);
  */
 function forgleAbout(forgleName) {
 	var prompt = "Tell me about " + forgleName;
+	sendMessage(prompt);
 }
 async function sendMessage(text=null) {
 	var message = userInput.value.trim();
