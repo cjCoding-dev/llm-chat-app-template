@@ -145,14 +145,16 @@ async function sendMessage() {
 			var forgleImages = [
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYOn_KkZT_sCEo1ECyqn05QIa59NSziLaSHz2KDAYIi6Q2hyCwi8xCLFW70kuqBXcnFEmcVvgoNbd4rG6CYP--lwZDHB_pHiPsCZnTtzSMjg&s=10",
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZEKI_uyleXWibl99GBNZZqs40qNtvR_Ab4roDI4iBDbaly7h_MHNp0c8ZfMSIv_zmul73gZjWFEIKFmCezfXPfSbLWyubbsbMIAYtwqtkiQ&s=10",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_o2I56FvpW_fMO5HiPdwYxgbCSDvo1heVFSgeGzTpJBYJWTVamnjK8eZIkNRL3p0e-0sN4VYHSwE0jnhtZvvHhdnjd6HUOZocjtwMUUvwvw&s=10"
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_o2I56FvpW_fMO5HiPdwYxgbCSDvo1heVFSgeGzTpJBYJWTVamnjK8eZIkNRL3p0e-0sN4VYHSwE0jnhtZvvHhdnjd6HUOZocjtwMUUvwvw&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_WG-B2VirQhtzmW48EV_XSZC8YE8IohbPg&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPXfuFaaYPo3otCvssqUdyMbr7jDn0zjC2yw&s=10"
 			];
 			for (const data of parsed.events) {
 				if (data === "[DONE]") {
 					var randomNumber = Math.floor(Math.random() * forgleImages.length);
 					var forgleImage = forgleImages[randomNumber];
 					var elmt = document.createElement('img');
-					elmt.setAttribute('style', 'margin: 10px;max-width: 300px;');
+					elmt.setAttribute('style', 'margin: 10px;max-width: 300px;display: block;');
 					elmt.setAttribute('src', forgleImage);
 					assistantTextEl.appendChild(elmt);
 					sawDone = true;
