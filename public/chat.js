@@ -169,6 +169,7 @@ async function sendMessage() {
 					elmt.setAttribute('style', 'margin: 10px;max-width: 300px;display: block;');
 					elmt.setAttribute('src', forgleImage);
 					assistantTextEl.appendChild(elmt);
+					chatMessages.scrollTop = chatMessages.scrollHeight;
 					sawDone = true;
 					buffer = "";
 					break;
