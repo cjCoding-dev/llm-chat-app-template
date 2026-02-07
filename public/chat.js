@@ -167,7 +167,8 @@ async function sendMessage(text=null) {
 				["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7f4bI474KOhzGTYbdxcNrPTcfh89ryMNqg&s=10", "Oriental Fire-Bellied Toad"],
 				["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1bi-Z_UeaNZvNNGhvH9DAllYWOI6kciepg&s=10", "Strawberry Poison-Dart Frog"],
 				["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23kxLnS8bAddCZLjTSWaV4cvJnrpmk7x_og&s=10", "White-Lipped Tree Frog"],
-				["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UvB5qKWB967sXaPCV4xHklCKHRHdJdhHLQ&s=10", "Johnson's Horned Treefrog"]
+				["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UvB5qKWB967sXaPCV4xHklCKHRHdJdhHLQ&s=10", "Johnson's Horned Treefrog"],
+				["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslmOXozpPmkqXB3RpTWoa6F7SumCES8ZoN06NPj4fHFtPDId2q18g1RjD1WcEB0gqdtHkmMSLVuBnJk5GrkTJ38eOeF2WvsfysBid0cXEKg&s=10", "Golden Poison-Dart Frog"]
 			];
 			for (const data of parsed.events) {
 				if (data === "[DONE]") {
