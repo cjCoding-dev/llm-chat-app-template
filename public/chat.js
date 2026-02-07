@@ -144,6 +144,7 @@ async function sendMessage() {
 			buffer = parsed.buffer;
 			for (const data of parsed.events) {
 				if (data === "[DONE]") {
+					assistantEl.innerHTML = assistantEl.innerHTML.replaceAll("[IMAGE:", "<img src=\"").replaceAll("]", ">");
 					sawDone = true;
 					buffer = "";
 					break;
