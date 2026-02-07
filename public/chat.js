@@ -157,7 +157,9 @@ async function sendMessage() {
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFGe-GsPeMsueeyCwLwHdZ-IIW39XyoodCQ&s=10",
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDktyHmLCPXjX6TL1cP0E7XKettXr5tekvQ&s=10",
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7f4bI474KOhzGTYbdxcNrPTcfh89ryMNqg&s=10",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1bi-Z_UeaNZvNNGhvH9DAllYWOI6kciepg&s=10"
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1bi-Z_UeaNZvNNGhvH9DAllYWOI6kciepg&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS23kxLnS8bAddCZLjTSWaV4cvJnrpmk7x_og&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4UvB5qKWB967sXaPCV4xHklCKHRHdJdhHLQ&s=10"
 			];
 			for (const data of parsed.events) {
 				if (data === "[DONE]") {
