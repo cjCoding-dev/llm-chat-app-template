@@ -1,14 +1,17 @@
-/**
- * LLM Chat App Frontend
- *
- * Handles the chat UI interactions and communication with the backend API.
- */
-
+const BOTTOM_PADDING = 20;
+let wasAtBottom = true;
 // DOM elements
+function scrollBottom(element) {
+	return (element.scrollHeight - element.offsetHeight) - element.scrollTop;
+}
 const chatMessages = document.getElementById("chat-messages");
 const userInput = document.getElementById("user-input");
 const sendButton = document.getElementById("send-button");
 const typingIndicator = document.getElementById("typing-indicator");
+
+chatMessages.addEventListener("scroll", function() {
+	wasAtBottom = scrollBottom(chatMessages) < BOTTOM_PADDING;
+});
 
 // Chat state
 let chatHistory = [
@@ -73,7 +76,9 @@ async function sendMessage() {
 		const assistantTextEl = assistantMessageEl.querySelector("p");
 
 		// Scroll to bottom
-		chatMessages.scrollTop = chatMessages.scrollHeight;
+		if(wasAtBottom) {
+			chatMessages.scrollTop = chatMessages.scrollHeight;
+		}
 
 		// Send request to API
 		const response = await fetch("/api/chat", {
@@ -101,7 +106,9 @@ async function sendMessage() {
 		let buffer = "";
 		const flushAssistantText = () => {
 			assistantTextEl.textContent = responseText;
-			chatMessages.scrollTop = chatMessages.scrollHeight;
+			if(wasAtBottom) {
+				chatMessages.scrollTop = chatMessages.scrollHeight;
+			}
 		};
 
 		let sawDone = false;
@@ -169,7 +176,9 @@ async function sendMessage() {
 					elmt.setAttribute('style', 'margin: 10px;max-width: 300px;display: block;');
 					elmt.setAttribute('src', forgleImage);
 					assistantTextEl.appendChild(elmt);
-					chatMessages.scrollTop = chatMessages.scrollHeight;
+					if(wasAtBottom) {
+						chatMessages.scrollTop = chatMessages.scrollHeight;
+					}
 					sawDone = true;
 					buffer = "";
 					break;
@@ -231,7 +240,9 @@ function addMessageToChat(role, content) {
 	chatMessages.appendChild(messageEl);
 
 	// Scroll to bottom
-	chatMessages.scrollTop = chatMessages.scrollHeight;
+	if(wasAtBottom) {
+		chatMessages.scrollTop = chatMessages.scrollHeight;
+	}
 }
 
 function consumeSseEvents(buffer) {
