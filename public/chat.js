@@ -147,7 +147,17 @@ async function sendMessage() {
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZEKI_uyleXWibl99GBNZZqs40qNtvR_Ab4roDI4iBDbaly7h_MHNp0c8ZfMSIv_zmul73gZjWFEIKFmCezfXPfSbLWyubbsbMIAYtwqtkiQ&s=10",
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_o2I56FvpW_fMO5HiPdwYxgbCSDvo1heVFSgeGzTpJBYJWTVamnjK8eZIkNRL3p0e-0sN4VYHSwE0jnhtZvvHhdnjd6HUOZocjtwMUUvwvw&s=10",
 				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV_WG-B2VirQhtzmW48EV_XSZC8YE8IohbPg&s=10",
-				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPXfuFaaYPo3otCvssqUdyMbr7jDn0zjC2yw&s=10"
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPXfuFaaYPo3otCvssqUdyMbr7jDn0zjC2yw&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FXU6brmaop3V7mqCmP6Qu2_-GZYeNsca8A&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhmHnM82Yb7SoqqIKBh2rJc5C339tll6sjpw&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxYabN0yLLfRp_21KPa5QggMTyoNSo7eQfAA&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxvaNkViIruzLU9hOpzPHLVjzgGZv6VjHhw&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ_OP-fq-eCUVEO_gLdV2VHUcBDYFgjXOaLA&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSgQCqx0TJncIendgGJ8179DXahHIf4m4ZQ&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGFGe-GsPeMsueeyCwLwHdZ-IIW39XyoodCQ&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDktyHmLCPXjX6TL1cP0E7XKettXr5tekvQ&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy7f4bI474KOhzGTYbdxcNrPTcfh89ryMNqg&s=10",
+				"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1bi-Z_UeaNZvNNGhvH9DAllYWOI6kciepg&s=10"
 			];
 			for (const data of parsed.events) {
 				if (data === "[DONE]") {
